@@ -18,7 +18,7 @@ public class GunController : MonoBehaviour {
 		if (equippedGun != null) {
 			Destroy (equippedGun.gameObject);
 		}
-			equippedGun = Instantiate (gunToEquip,weaponHold.position,weaponHold.rotation) as Gun;
+		equippedGun = Instantiate (gunToEquip,weaponHold.position,weaponHold.rotation)as Gun;
 		equippedGun.transform.parent = weaponHold;
 	}
 
@@ -39,4 +39,11 @@ public class GunController : MonoBehaviour {
 			return weaponHold.position.y;
 		}
 	}
+
+	/*public void Aim(Vector3 aimPoint) {
+		if (equippedGun != null) {
+			equippedGun.Aim (aimPoint);
+		}
+
+	}*/
 }

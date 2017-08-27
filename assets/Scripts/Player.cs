@@ -38,6 +38,8 @@ public class Player : LivingEntity {
 			controller.LookAt (point);
 			crosshairs.transform.position = point;
 			crosshairs.DetectTargets (ray);
+			//gunController.Aim (point);
+			//print ((new Vector2 (point.x, point.z) - new Vector2 (transform.position.x, transform.position.z)).magnitude);
 		}
 
 		//Weapon Input
