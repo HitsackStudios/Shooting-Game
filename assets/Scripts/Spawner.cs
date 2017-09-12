@@ -130,7 +130,7 @@ public class Spawner : MonoBehaviour {
 
 	[System.Serializable]
 	public class Wave {
-		public bool infinte;
+		public bool infinite;
 		public int enemyCount;
 		public float timeBetweenSpawns;
 
